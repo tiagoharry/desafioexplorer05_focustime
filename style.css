@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+:root {
+    font-size: 62,5%;
+}
+
+body {    
+    min-height: 100vh;
+    display: grid;  
+}
+
+#hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:0 7rem;
+   }
+
+#visor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+#time {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 14.8rem;
+    font-size: 12.6rem;
+    color: #323238;
+    display: flex;
+}
+
+.control {
+    display: flex;
+    gap: 4rem;
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.control button:active {
+    background-color: #02799D;
+    border-radius: 2rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 3.2rem;
+}
+
+.images-background, .cards button {
+    transition:ease 1s;
+}
+
+.images-background:hover{
+    fill: #02799D;
+}
+
+.cards button:hover {
+    transform: scale(1.1);
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    body {
+       display: flex;     
+       justify-content:center;    
+    }
+
+    #hero {
+    flex-direction: column; 
+    align-items: center;
+    }
+
+}
